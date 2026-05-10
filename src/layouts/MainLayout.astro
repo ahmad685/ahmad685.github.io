@@ -1,0 +1,102 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string;
+  canonical?: string;
+  ogType?: string;
+  ogTitle?: string;
+  ogDesc?: string;
+  ogUrl?: string;
+  ogImage?: string;
+  twitterCard?: string;
+  twitterTitle?: string;
+  twitterDesc?: string;
+  twitterImage?: string;
+  bodyClass: string;
+  ldJson?: string;
+  includeSwiper?: boolean;
+  includeValidate?: boolean;
+  page?: string;
+  footerVariant?: string;
+}
+
+const {
+  title,
+  description,
+  keywords,
+  canonical,
+  ogType,
+  ogTitle,
+  ogDesc,
+  ogUrl,
+  ogImage,
+  twitterCard,
+  twitterTitle,
+  twitterDesc,
+  twitterImage,
+  bodyClass,
+  ldJson,
+  includeSwiper = false,
+  includeValidate = false,
+  page = 'home',
+  footerVariant = 'default',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    {canonical && <link rel="canonical" href={canonical} />}
+    {ogType && <meta property="og:type" content={ogType} />}
+    {ogTitle && <meta property="og:title" content={ogTitle} />}
+    {ogDesc && <meta property="og:description" content={ogDesc} />}
+    {ogUrl && <meta property="og:url" content={ogUrl} />}
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {twitterCard && <meta name="twitter:card" content={twitterCard} />}
+    {twitterTitle && <meta name="twitter:title" content={twitterTitle} />}
+    {twitterDesc && <meta name="twitter:description" content={twitterDesc} />}
+    {twitterImage && <meta name="twitter:image" content={twitterImage} />}
+    <link href="/assets/img/favicon.png" rel="icon" />
+    <link href="/assets/img/favicon.png" rel="apple-touch-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+    {includeSwiper && <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />}
+    <link href="/assets/css/main.css" rel="stylesheet" />
+    {ldJson && <script type="application/ld+json" set:html={ldJson} />}
+  </head>
+
+  <body class={bodyClass}>
+    <Header page={page} />
+
+    <slot />
+
+    <Footer variant={footerVariant} />
+
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" is:inline></script>
+    {includeValidate && <script src="/assets/vendor/php-email-form/validate.js" is:inline></script>}
+    <script src="/assets/vendor/aos/aos.js" is:inline></script>
+    {includeSwiper && <script src="/assets/vendor/swiper/swiper-bundle.min.js" is:inline></script>}
+    <script src="/assets/js/main.js" is:inline></script>
+  </body>
+</html>

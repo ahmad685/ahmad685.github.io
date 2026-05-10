@@ -1,0 +1,102 @@
+---
+interface Props {
+  variant?: string;
+}
+const { variant = 'default' } = Astro.props;
+const isProjectCase = variant === 'project';
+---
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <span class="logo-mark">AA</span>
+          <span class="logo-text">
+            <strong>Ahmad Akmal</strong>
+            <small>Senior Full-Stack Engineer</small>
+          </span>
+        </a>
+        <p>
+          Building scalable SaaS platforms, backend systems, APIs, and
+          cloud-ready web applications for modern businesses.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#expertise">Engineering Expertise</a></li>
+          <li><a href="/projects">All Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Case Studies</h4>
+        <ul class="footer-links">
+          <li><a href="/projects">All Projects</a></li>
+          {isProjectCase ? (
+            <>
+              <li><a href="/projects#ai-platforms">AI Platforms</a></li>
+              <li><a href="/projects#saas-platforms">SaaS Platforms</a></li>
+              <li><a href="/projects#marketplace-platforms">Marketplace Platforms</a></li>
+            </>
+          ) : (
+            <>
+              <li><a href="/projects#saas-platforms">SaaS Platforms</a></li>
+              <li><a href="/projects#travel-platforms">Travel Platforms</a></li>
+              <li><a href="/projects#digital-product-tools">Digital Product Tools</a></li>
+            </>
+          )}
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ahmad-akmal-746247177"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-linkedin"></i><span>LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/ahmad685"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-github"></i><span>GitHub</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1SWSy_vjI51Z9bSdI7Nwmfm39ypcS58PU"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-file-earmark-arrow-down"></i
+              ><span>Resume</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:ahmadakmal685@gmail.com"
+              ><i class="bi bi-envelope"></i><span>Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy;
+        <span><script is:inline>document.write(new Date().getFullYear());</script></span>
+        Ahmad Akmal. Built for a premium personal brand and client
+        conversion.
+      </p>
+    </div>
+  </div>
+</footer>

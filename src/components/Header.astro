@@ -1,0 +1,89 @@
+---
+interface Props {
+  page?: string;
+}
+const { page = 'home' } = Astro.props;
+
+const isHome = page === 'home';
+const isProjects = page === 'projects';
+const isProjectCase = page === 'project-case';
+const isProjectDetail = page === 'project-detail';
+---
+
+<header id="header" class="header scroll-up-sticky">
+  <div class="container-fluid header-shell">
+    <a href="/" class="logo">
+      <span class="logo-mark">AA</span>
+      <span class="logo-text">
+        <strong>Ahmad Akmal</strong>
+        <small>Senior Full-Stack Engineer</small>
+      </span>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        {isHome ? (
+          <>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </>
+        ) : isProjects ? (
+          <>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#expertise">Expertise</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="/#experience">Experience</a></li>
+            <li><a href="/#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </>
+        ) : isProjectCase ? (
+          <>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#expertise">Expertise</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/projects" class="active">Portfolio</a></li>
+            <li><a href="/#experience">Experience</a></li>
+            <li><a href="/#testimonials">Testimonials</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </>
+        ) : (
+          <>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#expertise">Expertise</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#portfolio" class="active">Portfolio</a></li>
+            <li><a href="/#experience">Experience</a></li>
+            <li><a href="/#testimonials">Testimonials</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </>
+        )}
+      </ul>
+      <div class="nav-cta">
+        {isHome ? (
+          <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        ) : isProjects ? (
+          <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        ) : (
+          <a href="/#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        )}
+      </div>
+    </nav>
+    <button
+      type="button"
+      class="mobile-nav-toggle d-xl-none bi bi-list"
+      aria-label="Open navigation"
+      aria-controls="navmenu"
+      aria-expanded="false"
+    ></button>
+  </div>
+</header>

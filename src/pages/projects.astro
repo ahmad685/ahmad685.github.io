@@ -1,0 +1,639 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+const ldJson = JSON.stringify({"@context": "https://schema.org", "@type": "CollectionPage", "name": "Project Portfolio", "url": "https://ahmad685.github.io/projects.html", "description": "Explore 16 production-focused portfolio projects spanning Laravel SaaS development, AI platform development, marketplace web applications, and custom business systems."});
+---
+
+<MainLayout
+  title="Projects | Ahmad Akmal | SaaS, AI, Marketplace, and Business Platforms"
+  description="Explore 16 production-focused portfolio projects spanning Laravel SaaS development, AI platform development, marketplace web applications, and custom business systems."
+  canonical="https://ahmad685.github.io/projects.html"
+  ogType="website"
+  ogTitle="Projects | Ahmad Akmal | SaaS, AI, Marketplace, and Business Platforms"
+  ogDesc="Explore 16 production-focused portfolio projects spanning Laravel SaaS development, AI platform development, marketplace web applications, and custom business systems."
+  ogUrl="https://ahmad685.github.io/projects.html"
+  ogImage="https://ahmad685.github.io/ahmad-akmal-developer.png"
+  twitterCard="summary_large_image"
+  twitterTitle="Projects | Ahmad Akmal | SaaS, AI, Marketplace, and Business Platforms"
+  twitterDesc="Explore 16 production-focused portfolio projects spanning Laravel SaaS development, AI platform development, marketplace web applications, and custom business systems."
+  twitterImage="https://ahmad685.github.io/ahmad-akmal-developer.png"
+  bodyClass="projects-page"
+  ldJson={ldJson}
+  includeSwiper={false}
+  includeValidate={false}
+  page="projects"
+  footerVariant="default"
+>
+
+  <main class="main">
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="section-badge">All Projects</span>
+            <h1 class="case-study-title">Engineering systems, platforms, and products built for real-world scale, complexity, and operational reliability.</h1>
+          </div>
+          <p>These case studies cover platforms, workflows, and business-critical tooling delivered under real production constraints.</p>
+        </div>
+
+        <div class="content-panel project-library-intro">
+          <p class="lead-paragraph">Each project reflects system design, delivery, and execution across real product environments - not isolated feature work.</p>
+          <p>20+ production systems across SaaS, AI, marketplaces, and automation - built around architecture, reliability, and long-term operational control.</p>
+        </div>
+
+        <div class="project-filter-shell" data-project-filters data-filter-target="#project-library-grid">
+          <div class="project-filter-copy">
+            <span class="section-kicker">Explore by system type</span>
+            <p>Browse platforms by product category, workflow model, and operational context.</p>
+          </div>
+          <div class="project-filter-bar" role="toolbar" aria-label="Project categories">
+            <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-chip" data-filter="ai-platforms" aria-pressed="false">AI Platforms</button>
+            <button type="button" class="filter-chip" data-filter="saas-platforms" aria-pressed="false">SaaS Platforms</button>
+            <button type="button" class="filter-chip" data-filter="marketplace-platforms" aria-pressed="false">Marketplace Platforms</button>
+            <button type="button" class="filter-chip" data-filter="e-commerce" aria-pressed="false">E-Commerce</button>
+            <button type="button" class="filter-chip" data-filter="social-platforms" aria-pressed="false">Social Platforms</button>
+            <button type="button" class="filter-chip" data-filter="travel-platforms" aria-pressed="false">Travel Platforms</button>
+            <button type="button" class="filter-chip" data-filter="marketing-tools" aria-pressed="false">Marketing Tools</button>
+            <button type="button" class="filter-chip" data-filter="digital-product-tools" aria-pressed="false">Digital Product Tools</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section pt-0">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div id="project-library-grid" class="portfolio-grid portfolio-grid-3">
+          
+          <article
+            id="travel-platforms"
+            class="project-card project-card-library"
+            data-project-card
+            data-category="travel-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/mosafir/feature.webp"
+                alt="Mosafir Travel Booking Platform for Scalable Tourism Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Mosafir Travel Booking System for Tourism Operations</h3>
+              <span class="project-type">Travel Platforms</span>
+              <p class="project-summary">
+                A production travel platform built to manage destination discovery, reservations, payments, and operator workflows, streamlining end-to-end booking operations.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 12</span><span>Vue 2</span><span>Redis</span><span>Payfast</span>
+                </div>
+              </div>
+              <a href="/projects/mosafir-travel-booking-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="e-commerce"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/profoutlet/feature.webp"
+                alt="ProfOutlet Laravel E-Commerce Marketplace for Catalog and Order Scale dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>ProfOutlet Commerce Operations Marketplace</h3>
+              <span class="project-type">E-Commerce</span>
+              <p class="project-summary">
+                An e-commerce marketplace built for catalog control, inventory sync, and multi-step checkout workflows, improving transaction reliability across daily operations.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 11</span><span>Bagisto</span><span>Vue 3</span><span>Tailwind</span>
+                </div>
+              </div>
+              <a href="/projects/profoutlet-ecomerce-marketplace" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            id="ai-platforms"
+            class="project-card project-card-library"
+            data-project-card
+            data-category="ai-platforms marketing-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/seoondemand/feature.webp"
+                alt="SEOOnDemand AI SEO Automation Platform for Multi-Site Content Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>SEOOnDemand AI Content Operations Platform</h3>
+              <span class="project-type">AI Platforms</span>
+              <p class="project-summary">
+                An AI content operations platform that turned analytics signals into multi-site article generation and publishing pipelines, reducing manual SEO execution.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 12</span><span>Vue 3</span><span>OpenAI</span><span>GA4</span>
+                </div>
+              </div>
+              <a href="/projects/seoondemand-ai-seo-automation-blog-generation-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="social-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/metabuddy/feature.webp"
+                alt="MetaBuddy Fitness Community Platform for Events, Engagement, and Retention dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>MetaBuddy Fitness Community and Events Platform</h3>
+              <span class="project-type">Social Platforms</span>
+              <p class="project-summary">
+                A community platform for gyms and fitness brands combining events, engagement, and admin coordination to reduce manual operations and support retention.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 12</span><span>React</span><span>Redis</span><span>S3</span>
+                </div>
+              </div>
+              <a href="/projects/metabuddy-gym-social-networking-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="ai-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/pixle/feature.webp"
+                alt="Pixle AI Facial Recognition Platform for Event Photo Delivery dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Pixle AI Photo Delivery Platform</h3>
+              <span class="project-type">AI Platforms</span>
+              <p class="project-summary">
+                An AI photo delivery platform using facial recognition and cloud processing to match, organize, and distribute event galleries, eliminating manual photo matching.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 7</span><span>Azure AI</span><span>S3</span><span>Redis</span>
+                </div>
+              </div>
+              <a href="/projects/pixle-ai-photo-sharing-facial-recognition-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="ai-platforms digital-product-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/xinva/feature.webp"
+                alt="Xinva AI Design Generation Platform for Merchandise and Digital Products dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Xinva AI Design and Merchandise Platform</h3>
+              <span class="project-type">AI Platforms</span>
+              <p class="project-summary">
+                A generative design platform supporting creation workflows, subscriptions, and role-based access, accelerating asset delivery across commercial merchandise operations.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 10</span><span>Vue 3</span><span>OpenAI</span><span>Stripe</span>
+                </div>
+              </div>
+              <a href="/projects/xinva-ai-design-generation-platform-nft-merchandise" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            id="saas-platforms"
+            class="project-card project-card-library"
+            data-project-card
+            data-category="saas-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/myhr/feature.webp"
+                alt="MyHR Human Resource Management SaaS for Distributed Workforce Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>MyHR HR Operations SaaS</h3>
+              <span class="project-type">SaaS Platforms</span>
+              <p class="project-summary">
+                A multi-role HR SaaS platform unifying employee records, leave, attendance, and recruitment workflows, reducing operational overhead across distributed teams.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 8</span><span>Blade</span><span>Stripe</span><span>Redis</span>
+                </div>
+              </div>
+              <a href="/projects/myhr-hr-management-system" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="saas-platforms marketing-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/leadflow-crm/feature.webp"
+                alt="LeadFlow CRM for Lead Routing, Pipeline Visibility, and Sales Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>LeadFlow CRM and Lead Routing Platform</h3>
+              <span class="project-type">SaaS Platforms</span>
+              <p class="project-summary">
+                A CRM and lead routing platform built to capture demand, automate assignment, and improve real-time pipeline visibility across sales operations.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 12</span><span>Vue 3</span><span>WebSockets</span><span>Redis</span>
+                </div>
+              </div>
+              <a href="/projects/lead-management-system-crm" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            id="marketplace-platforms"
+            class="project-card project-card-library"
+            data-project-card
+            data-category="marketplace-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/nexlance/feature.webp"
+                alt="Nexlance Freelance Marketplace for Service Discovery, Orders, and Trust Workflows dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Nexlance Freelance Services Marketplace</h3>
+              <span class="project-type">Marketplace Platforms</span>
+              <p class="project-summary">
+                A dual-sided services marketplace managing listings, transactions, messaging, and trust workflows across a multi-step order lifecycle, improving operational control.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel</span><span>Redis</span><span>PayPal</span><span>Stripe</span>
+                </div>
+              </div>
+              <a href="/projects/nexlance-freelance-marketplace" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="saas-platforms marketing-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/alphasender/feature.webp"
+                alt="AlphaSender Email Marketing Automation Platform for High-Volume Campaign Delivery dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>AlphaSender Email Operations Platform</h3>
+              <span class="project-type">SaaS Platforms</span>
+              <p class="project-summary">
+                An email operations platform managing subscribers, campaign scheduling, analytics, and billing workflows, improving delivery control across high-volume marketing pipelines.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 11</span><span>Redis</span><span>EC2</span><span>Stripe</span>
+                </div>
+              </div>
+              <a href="/projects/alpha-sender-email-marketing-tool" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="saas-platforms marketing-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/uagency/feature.webp"
+                alt="UAgancy Agency Operations Platform for Client, Campaign, and Reporting Workflows dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>UAgancy Agency Operations Platform</h3>
+              <span class="project-type">SaaS Platforms</span>
+              <p class="project-summary">
+                An agency operations platform centralizing client workspaces, campaign tracking, and reporting layers, reducing manual status coordination across ongoing delivery.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel</span><span>React</span><span>Tailwind</span><span>MySQL</span>
+                </div>
+              </div>
+              <a href="/projects/uagancy-marketing-agency-portal" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="marketplace-platforms e-commerce"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/merchantdeals/feature.webp"
+                alt="MerchantDeals Promotional Offers Platform for Campaign Launches and Merchant Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>MerchantDeals Offers and Merchant Campaign Platform</h3>
+              <span class="project-type">Marketplace Platforms</span>
+              <p class="project-summary">
+                A merchant campaign platform built for onboarding, offer publishing, and admin control over discount operations, improving visibility across merchant lifecycle workflows.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel</span><span>Blade</span><span>Bootstrap</span><span>MySQL</span>
+                </div>
+              </div>
+              <a href="/projects/merchantdeals-ecommerce-offers-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="travel-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/aussie-camp/feature.webp"
+                alt="Aussie Camp Reservation Platform for Outdoor Tourism and Campsite Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Aussie Camp Booking and Reservation Platform</h3>
+              <span class="project-type">Travel Platforms</span>
+              <p class="project-summary">
+                A reservation platform built for campsite discovery, availability management, and booking workflows, streamlining outdoor tourism operations and reducing reservation overhead.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel</span><span>Vue</span><span>Redis</span><span>Stripe</span>
+                </div>
+              </div>
+              <a href="/projects/aussie-camp-reservation-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="saas-platforms digital-product-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/teamery/feature.webp"
+                alt="Teamery Collaboration Platform for Task Coordination and Team Visibility dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Teamery Team Operations and Collaboration SaaS</h3>
+              <span class="project-type">SaaS Platforms</span>
+              <p class="project-summary">
+                An internal collaboration SaaS designed to coordinate tasks, structured delivery workflows, and team visibility across multi-step operations.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel</span><span>Blade</span><span>Stripe</span><span>EC2</span>
+                </div>
+              </div>
+              <a href="/projects/teamery-team-collaboration-software" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            id="digital-product-tools"
+            class="project-card project-card-library"
+            data-project-card
+            data-category="digital-product-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/udigify/feature.webp"
+                alt="Udigify Creative Asset Platform for Design Operations and Content Production dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Udigify Creative Operations Platform</h3>
+              <span class="project-type">Digital Product Tools</span>
+              <p class="project-summary">
+                A creative operations platform managing digital assets, design requests, and content production workflows, improving workflow control for production teams.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel</span><span>React</span><span>Tailwind</span><span>MySQL</span>
+                </div>
+              </div>
+              <a href="/projects/udigify-creative-design-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card project-card-library"
+            data-project-card
+            data-category="marketplace-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/caroogle/feature.webp"
+                alt="Caroogle Vehicle Marketplace Platform for Listings, Search, and Buyer Intent dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Caroogle Vehicle Listings Marketplace</h3>
+              <span class="project-type">Marketplace Platforms</span>
+              <p class="project-summary">
+                A vehicle marketplace platform built for listing management, search workflows, and dealer and private seller operations, improving inventory visibility for buyers.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel</span><span>Blade</span><span>Bootstrap</span><span>MySQL</span>
+                </div>
+              </div>
+              <a href="/projects/caroogle-car-trading-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section section-accent">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-panel">
+          <div class="section-heading compact-heading">
+            <div>
+              <span class="section-kicker">Next Step</span>
+              <h3>Need support with a complex SaaS product, internal platform, or system build?</h3>
+            </div>
+            <p>Available for product engineering, platform development, and system-focused delivery.</p>
+          </div>
+          <div class="contact-links">
+            <a href="/#contact" class="btn btn-primary">Start a Project</a>
+            <a href="/#portfolio" class="btn btn-secondary">Back to Featured Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</MainLayout>

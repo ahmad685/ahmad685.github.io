@@ -1,17 +1,1157 @@
 ---
+import MainLayout from '../layouts/MainLayout.astro';
 
+const ldJson = JSON.stringify([
+  {"@context": "https://schema.org", "@type": "Person", "name": "Ahmad Akmal", "jobTitle": "Senior Full-Stack Engineer, AI Platform Developer, SaaS Architect", "url": "https://ahmad685.github.io", "image": "https://ahmad685.github.io/ahmad-akmal-developer.png", "sameAs": ["https://github.com/ahmad685", "https://www.linkedin.com/in/ahmad-akmal-746247177"]},
+  {"@context": "https://schema.org", "@type": "WebSite", "name": "Ahmad Akmal Portfolio", "url": "https://ahmad685.github.io", "description": "Senior full-stack engineer portfolio focused on Laravel SaaS development, AI platform development, marketplace web applications, and custom business platforms."}
+]);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout
+  title="Ahmad Akmal | Senior Full-Stack Engineer, AI Platform Developer &amp; SaaS Architect"
+  description="Senior full-stack engineer building Laravel SaaS platforms, AI products, marketplaces, and automation systems for startups and digital businesses."
+  keywords="senior full-stack engineer, Laravel SaaS development, AI platform development, marketplace web application, custom business platforms, SaaS architect, automation systems"
+  canonical="https://ahmad685.github.io/"
+  ogType="website"
+  ogTitle="Ahmad Akmal | Senior Full-Stack Engineer, AI Platform Developer &amp; SaaS Architect"
+  ogDesc="Production-focused portfolio covering SaaS platforms, AI systems, marketplaces, and custom business applications built with Laravel and modern web stacks."
+  ogUrl="https://ahmad685.github.io/"
+  ogImage="https://ahmad685.github.io/ahmad-akmal-developer.png"
+  twitterCard="summary_large_image"
+  twitterTitle="Ahmad Akmal | Senior Full-Stack Engineer, AI Platform Developer &amp; SaaS Architect"
+  twitterDesc="Production-focused portfolio covering SaaS platforms, AI systems, marketplaces, and custom business applications built with Laravel and modern web stacks."
+  twitterImage="https://ahmad685.github.io/ahmad-akmal-developer.png"
+  bodyClass="index-page"
+  ldJson={ldJson}
+  includeSwiper={true}
+  includeValidate={true}
+  page="home"
+  footerVariant="default"
+>
+
+  <main class="main">
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center hero-grid">
+          <div class="col-lg-7">
+            <div class="hero-copy" data-aos="fade-right" data-aos-delay="150">
+              <h1>
+                Scalable SaaS Platforms <br>& Backend Systems 
+                <br>Built for Production
+              </h1>
+              <p class="hero-lead">
+                I help startups and SaaS teams turn product ideas into
+                reliable software. Backend architecture, APIs, and scalable
+                cloud infrastructure.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                  Start a Project
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                  View Portfolio
+                  <i class="bi bi-grid ms-2"></i>
+                </a>
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1SWSy_vjI51Z9bSdI7Nwmfm39ypcS58PU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="subtle-link"
+                >
+                  Download Resume <i class="bi bi-download"></i>
+                </a>
+              </div>
+
+              <div class="hero-meta">
+                <div class="meta-pill">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Islamabad, Pakistan</span>
+                </div>
+                <div class="meta-pill">
+                  <i class="bi bi-briefcase"></i>
+                  <span>Available for freelance and contract work</span>
+                </div>
+              </div>
+
+              <p class="hero-note">
+                AI-assisted for faster prototyping and smarter iteration.
+                Human-led for architecture, code quality, and production
+                judgment.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div
+              class="hero-visual"
+              data-aos="fade-left"
+              data-aos-delay="220"
+            >
+              <div class="portrait-panel">
+                <img
+                  src="/ahmad-akmal.png"
+                  alt="Ahmad Akmal portrait"
+                  class="img-fluid portrait-img"
+                />
+              </div>
+              <div class="floating-card card-primary">
+                <span class="eyebrow">Core Focus</span>
+                <strong>Backend architecture, SaaS systems, APIs</strong>
+              </div>
+              <div class="floating-card card-secondary">
+                <span class="eyebrow">Business Value</span>
+                <strong
+                  >Faster delivery, better performance, reliable scale</strong
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credibility" class="stats section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading compact-heading stats-heading">
+          <div>
+            <span class="section-kicker">Trust Metrics</span>
+            <h3>
+              Proof points that reinforce senior delivery and platform
+              reliability
+            </h3>
+          </div>
+          <p>
+            A concise credibility block for founders and product teams
+            evaluating technical depth, delivery consistency, and production
+            ownership.
+          </p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <strong>5+</strong>
+            <span>Years Building Production Systems</span>
+          </article>
+          <article class="stat-card">
+            <strong>30+</strong>
+            <span>Web Platforms Delivered</span>
+          </article>
+          <article class="stat-card">
+            <strong>20+</strong>
+            <span>Clients Across Startups and Growing Businesses</span>
+          </article>
+          <article class="stat-card">
+            <strong>99.9%</strong>
+            <span>Infrastructure Reliability Across Managed Deployments</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="section-kicker">About</span>
+            <h2>Senior engineering support for ambitious digital products</h2>
+          </div>
+          <p>
+            I work with startups, SaaS companies, and modern businesses that
+            need more than code delivery. They need strong technical judgment,
+            scalable system design, and an engineering partner who understands
+            product priorities as well as implementation detail.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch about-grid">
+          <div class="col-lg-7">
+            <div class="content-panel">
+              <p class="lead-paragraph">
+                My work sits at the intersection of product development,
+                backend architecture, and platform reliability. I build the
+                systems behind SaaS products, internal platforms, admin
+                panels, and business-critical workflows that teams depend on
+                every day.
+              </p>
+              <p>
+                From API design and database architecture to frontend
+                delivery, deployment, and post-launch optimization, I focus on
+                shipping software that is maintainable, measurable, and ready
+                to grow with the business behind it.
+              </p>
+              <div class="about-points">
+                <div>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >Scalable architecture decisions grounded in business
+                    goals</span
+                  >
+                </div>
+                <div>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >Clean, maintainable delivery across backend and
+                    frontend</span
+                  >
+                </div>
+                <div>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >Strong communication with founders, product teams, and
+                    stakeholders</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <aside class="about-aside">
+              <div class="spotlight-card">
+                <span class="eyebrow">Best Fit</span>
+                <h3>What I typically help clients build</h3>
+                <ul>
+                  <li>
+                    SaaS products with multi-role dashboards and billing
+                  </li>
+                  <li>
+                    Backend systems and APIs for web and mobile platforms
+                  </li>
+                  <li>
+                    Platform upgrades, performance fixes, and architecture
+                    reviews
+                  </li>
+                  <li>
+                    Cloud-ready web apps with deployment and reliability needs
+                  </li>
+                </ul>
+              </div>
+              <div class="spotlight-card compact">
+                <span class="eyebrow">Engineering Philosophy</span>
+                <p>
+                  Make the right technical choices early, keep the codebase
+                  understandable, and build systems that stay reliable as the
+                  product evolves.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="process-block">
+          <div class="section-heading compact-heading">
+            <div>
+              <span class="section-kicker">My Development Process</span>
+              <h3>A clear delivery workflow from planning to scale</h3>
+            </div>
+            <p>
+              Each project is structured around technical clarity, fast
+              feedback loops, and business-aware delivery.
+            </p>
+          </div>
+
+          <div class="process-grid" data-process-grid>
+            <article class="process-card process-active" data-process-step>
+              <div class="process-rail" aria-hidden="true">
+                <span class="process-node">01</span>
+                <span class="process-progress"></span>
+              </div>
+              <h4>Discovery</h4>
+              <p>
+                Understanding product goals, technical constraints, user
+                flows, and the business outcome the build needs to support.
+              </p>
+              <span class="process-meta"
+                >Clear scope before delivery begins</span
+              >
+            </article>
+            <article class="process-card" data-process-step>
+              <div class="process-rail" aria-hidden="true">
+                <span class="process-node">02</span>
+                <span class="process-progress"></span>
+              </div>
+              <h4>Architecture</h4>
+              <p>
+                Designing the system structure, stack decisions, data model,
+                and API approach for long-term maintainability.
+              </p>
+              <span class="process-meta"
+                >Human-led technical direction and trade-offs</span
+              >
+            </article>
+            <article class="process-card" data-process-step>
+              <div class="process-rail" aria-hidden="true">
+                <span class="process-node">03</span>
+                <span class="process-progress"></span>
+              </div>
+              <h4>Development</h4>
+              <p>
+                Building maintainable backend and frontend systems with a
+                focus on quality, clarity, and delivery momentum.
+              </p>
+              <span class="process-meta"
+                >Fast iteration with reliable implementation</span
+              >
+            </article>
+            <article class="process-card" data-process-step>
+              <div class="process-rail" aria-hidden="true">
+                <span class="process-node">04</span>
+                <span class="process-progress"></span>
+              </div>
+              <h4>Optimization</h4>
+              <p>
+                Improving performance, reliability, data handling, and
+                deployment readiness before and after launch.
+              </p>
+              <span class="process-meta"
+                >Performance, reliability, and release readiness</span
+              >
+            </article>
+            <article class="process-card" data-process-step>
+              <div class="process-rail" aria-hidden="true">
+                <span class="process-node">05</span>
+                <span class="process-progress"></span>
+              </div>
+              <h4>Launch &amp; Support</h4>
+              <p>
+                Shipping with confidence, monitoring outcomes, and supporting
+                the next phase of product improvement.
+              </p>
+              <span class="process-meta"
+                >Support beyond initial delivery</span
+              >
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="expertise section section-deep">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Engineering Expertise</span>
+            <h2>
+              Engineering judgment that improves delivery, scale, and product
+              confidence
+            </h2>
+          </div>
+          <p>
+            I help teams reduce delivery friction, ship more confidently, and
+            make stronger technical decisions around the systems that matter
+            most.
+          </p>
+        </div>
+
+        <div class="expertise-note">
+          <div>
+            <span class="section-kicker">Modern Delivery Workflow</span>
+            <h3>
+              AI-assisted where it accelerates execution. Human-led where
+              product risk is real.
+            </h3>
+          </div>
+          <p>
+            I use AI tools to speed up exploration, prototyping, and
+            repetitive implementation, while keeping architecture, review,
+            quality control, and production decisions firmly grounded in
+            senior engineering judgment.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="feature-card">
+            <i class="bi bi-diagram-3"></i>
+            <h3>Architecture That Supports Scale</h3>
+            <p>
+              Structuring applications, data models, and service boundaries so
+              product growth does not create fragile systems later.
+            </p>
+            <span class="feature-meta"
+              >Outcome: fewer costly rebuild decisions as the platform
+              matures.</span
+            >
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-plug"></i>
+            <h3>APIs That Reduce Product Friction</h3>
+            <p>
+              Designing clear, documented APIs that support fast frontend
+              work, smoother integrations, and more predictable product
+              workflows.
+            </p>
+            <span class="feature-meta"
+              >Outcome: better team velocity and cleaner integration
+              paths.</span
+            >
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-speedometer2"></i>
+            <h3>Performance That Protects Growth</h3>
+            <p>
+              Fixing bottlenecks, improving response times, and lowering
+              system strain before performance issues become customer-facing
+              problems.
+            </p>
+            <span class="feature-meta"
+              >Outcome: faster products and more efficient
+              infrastructure.</span
+            >
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-kanban"></i>
+            <h3>Smarter Product Delivery</h3>
+            <p>
+              Moving from product requirements to dependable features with the
+              right balance of speed, maintainability, and release confidence.
+            </p>
+            <span class="feature-meta"
+              >Outcome: faster execution without sloppy engineering
+              shortcuts.</span
+            >
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-cloud-arrow-up"></i>
+            <h3>Cloud Workflows With Safer Releases</h3>
+            <p>
+              Improving deployment workflows, CI/CD, observability, and cloud
+              operations so releases are safer and easier to manage.
+            </p>
+            <span class="feature-meta"
+              >Outcome: stronger release reliability and lower operational
+              risk.</span
+            >
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-shield-check"></i>
+            <h3>Quality Control and Technical Judgment</h3>
+            <p>
+              Keeping codebases modular, reviewable, and easier for teams to
+              build on without accumulating expensive technical debt.
+            </p>
+            <span class="feature-meta"
+              >Outcome: software that remains maintainable as teams and
+              features expand.</span
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Core Stack</span>
+            <h2>Curated technical depth across the product stack</h2>
+          </div>
+          <p>
+            A senior-level stack shaped around shipping, scaling, and
+            maintaining modern SaaS and web platforms.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-group">
+            <h3>Frontend</h3>
+            <ul class="stack-list">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Vue.js</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+            </ul>
+          </article>
+          <article class="stack-group">
+            <h3>Backend</h3>
+            <ul class="stack-list">
+              <li>Laravel</li>
+              <li>PHP</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>REST APIs</li>
+              <li>GraphQL</li>
+              <li>Authentication Systems</li>
+            </ul>
+          </article>
+          <article class="stack-group">
+            <h3>Database</h3>
+            <ul class="stack-list">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>MongoDB</li>
+              <li>Query Optimization</li>
+              <li>Data Modeling</li>
+            </ul>
+          </article>
+          <article class="stack-group">
+            <h3>DevOps &amp; Cloud</h3>
+            <ul class="stack-list">
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>Azure</li>
+              <li>CI/CD</li>
+              <li>Nginx</li>
+              <li>Apache</li>
+              <li>Cloud Deployment</li>
+            </ul>
+          </article>
+          <article class="stack-group">
+            <h3>Tools</h3>
+            <ul class="stack-list">
+              <li>Git</li>
+              <li>GitHub Actions</li>
+              <li>Postman</li>
+              <li>Swagger</li>
+              <li>Jira</li>
+              <li>Figma</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section section-accent">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Services I Offer</span>
+            <h2>How I help teams build better products</h2>
+          </div>
+          <p>
+            Commercial services focused on the technical work that unlocks
+            product growth, stability, and faster execution.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <i class="bi bi-window-stack"></i>
+            <h3>SaaS Platform Development</h3>
+            <p>
+              For founders and teams building subscription products,
+              dashboards, admin systems, and customer-facing web apps.
+            </p>
+            <span>Outcome: a scalable SaaS foundation ready for growth.</span>
+          </article>
+          <article class="service-card">
+            <i class="bi bi-code-square"></i>
+            <h3>Full-Stack Web Development</h3>
+            <p>
+              End-to-end product development across backend logic, frontend
+              interfaces, data handling, and deployment.
+            </p>
+            <span
+              >Outcome: faster delivery without fragmented engineering.</span
+            >
+          </article>
+          <article class="service-card">
+            <i class="bi bi-hdd-network"></i>
+            <h3>API &amp; Backend Systems</h3>
+            <p>
+              Building and refining the backend services that power apps,
+              integrations, internal tools, and platform workflows.
+            </p>
+            <span
+              >Outcome: stable, maintainable systems behind the product.</span
+            >
+          </article>
+          <article class="service-card">
+            <i class="bi bi-activity"></i>
+            <h3>Performance Optimization</h3>
+            <p>
+              Auditing slow, unstable, or resource-heavy applications and
+              improving the layers that most affect user experience.
+            </p>
+            <span
+              >Outcome: better speed, lower overhead, stronger
+              reliability.</span
+            >
+          </article>
+          <article class="service-card">
+            <i class="bi bi-cloud-check"></i>
+            <h3>Cloud Deployment &amp; DevOps</h3>
+            <p>
+              Supporting release workflows, containerized deployment, CI/CD,
+              and production infrastructure improvements.
+            </p>
+            <span
+              >Outcome: safer launches and more dependable operations.</span
+            >
+          </article>
+          <article class="service-card">
+            <i class="bi bi-chat-square-text"></i>
+            <h3>Technical Consulting</h3>
+            <p>
+              Helping teams make better architecture, delivery, and product
+              decisions before expensive technical debt compounds.
+            </p>
+            <span
+              >Outcome: clearer direction and better engineering
+              decisions.</span
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading section-heading-actions">
+          <div>
+            <span class="section-kicker">Featured Projects</span>
+            <h2>
+              Premium case studies spanning travel systems, e-commerce, AI automation, and community-driven product engineering
+            </h2>
+          </div>
+          <div class="section-actions">
+            <p>
+              The homepage stays selective. These featured builds highlight the range of platform work I ship for SaaS buyers, operators, and product teams.
+            </p>
+            <a href="/projects" class="btn btn-secondary btn-sm">
+              View All Projects
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-grid">
+          
+          <article
+            class="project-card project-card-featured"
+            data-project-card
+            data-category="travel-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/mosafir/feature.webp"
+                alt="Mosafir Travel Booking Platform for Scalable Tourism Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>Mosafir Travel Booking Platform for Tourism Operations</h3>
+              <span class="project-type">Travel Platforms</span>
+              <p class="project-summary">
+                Laravel travel booking platform that unified destination discovery, package reservations, payment workflows, and operator dashboards for modern tourism businesses.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 12</span><span>Vue 2</span><span>Redis</span><span>Payfast</span>
+                </div>
+              </div>
+              <a href="/projects/mosafir-travel-booking-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+          <article
+            class="project-card project-card-featured"
+            data-project-card
+            data-category="e-commerce"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/profoutlet/feature.webp"
+                alt="ProfOutlet Laravel E-Commerce Marketplace for Catalog and Order Scale dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>ProfOutlet Laravel E-Commerce Marketplace</h3>
+              <span class="project-type">E-Commerce</span>
+              <p class="project-summary">
+                Bagisto-powered Laravel commerce platform for catalog management, inventory control, checkout, and order operations with production-grade maintainability.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 11</span><span>Bagisto</span><span>Vue 3</span><span>Tailwind</span><span>MySQL</span>
+                </div>
+              </div>
+              <a href="/projects/profoutlet-ecomerce-marketplace" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+          <article
+            class="project-card project-card-featured"
+            data-project-card
+            data-category="ai-platforms marketing-tools"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/seoondemand/feature.webp"
+                alt="SEOOnDemand AI SEO Automation Platform for Multi-Site Content Operations dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>SEOOnDemand AI SEO Automation SaaS</h3>
+              <span class="project-type">AI Platforms</span>
+              <p class="project-summary">
+                AI SEO automation platform that turns analytics signals into optimized article creation, publishing workflows, and scalable content operations for agencies.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 12</span><span>Vue 3</span><span>OpenAI</span><span>GA4</span>
+                </div>
+              </div>
+              <a href="/projects/seoondemand-ai-seo-automation-blog-generation-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+          <article
+            class="project-card project-card-featured"
+            data-project-card
+            data-category="social-platforms"
+          >
+            <div class="project-media">
+              <img
+                src="/assets/img/projects/metabuddy/feature.webp"
+                alt="MetaBuddy Fitness Community Platform for Events, Engagement, and Retention dashboard and interface"
+                width="1600"
+                height="1000"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <h3>MetaBuddy Fitness Community and Event Platform</h3>
+              <span class="project-type">Social Platforms</span>
+              <p class="project-summary">
+                Community platform for gyms and fitness brands that combines event discovery, member interaction, and engagement workflows in one scalable product.
+              </p>
+              <div class="project-stack">
+                <span class="project-stack-label">Tech Stack</span>
+                <div class="tag-list compact">
+                  <span>Laravel 12</span><span>React</span><span>Redis</span><span>S3</span>
+                </div>
+              </div>
+              <a href="/projects/metabuddy-gym-social-networking-platform" class="text-link project-link">
+                View Case Study <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="portfolio-footer-cta">
+          <a href="/projects" class="text-link">
+            Browse all project highlights <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience section section-alt">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Experience</span>
+            <h2>
+              Career progression shaped by product delivery and platform depth
+            </h2>
+          </div>
+          <p>
+            Experience across product teams, agency environments, and live
+            production systems that demanded ownership, reliability, and
+            speed.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-card timeline-card-split">
+            <div class="timeline-side">
+              <span class="timeline-period">2024 - Present</span>
+              <span class="timeline-company">Mosafir</span>
+              <span class="timeline-location">Travel Platform Delivery</span>
+            </div>
+            <div class="timeline-main">
+              <h3>Web Development Specialist</h3>
+              <ul>
+                <li>
+                  Led backend improvements for a live travel platform serving
+                  production traffic.
+                </li>
+                <li>
+                  Architected MFA and role-based access flows for stronger
+                  security and control.
+                </li>
+                <li>
+                  Improved database performance and release workflows with
+                  CI/CD automation.
+                </li>
+                <li>
+                  Contributed to infrastructure and service planning for
+                  future platform scale.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-card timeline-card-split">
+            <div class="timeline-side">
+              <span class="timeline-period">2020 - 2024</span>
+              <span class="timeline-company">Codesorbit</span>
+              <span class="timeline-location">Agency and SaaS Builds</span>
+            </div>
+            <div class="timeline-main">
+              <h3>Laravel Developer</h3>
+              <ul>
+                <li>
+                  Built SaaS and business platforms across Laravel, Node.js,
+                  Vue.js, and cloud services.
+                </li>
+                <li>
+                  Delivered APIs, real-time integrations, billing systems, and
+                  operational tooling.
+                </li>
+                <li>
+                  Handled deployment, uptime, and performance improvements for
+                  client-facing products.
+                </li>
+                <li>
+                  Worked closely with cross-functional stakeholders to ship
+                  product features reliably.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-card timeline-card-split">
+            <div class="timeline-side">
+              <span class="timeline-period">2019 - 2020</span>
+              <span class="timeline-company">Soft Infinity Technology</span>
+              <span class="timeline-location">Foundation and Delivery</span>
+            </div>
+            <div class="timeline-main">
+              <h3>Junior Web Developer</h3>
+              <ul>
+                <li>
+                  Built early backend integrations and supported data-driven
+                  application workflows.
+                </li>
+                <li>
+                  Worked with relational databases, version control, and
+                  structured delivery processes.
+                </li>
+                <li>
+                  Gained hands-on experience in how production software behaves
+                  under real client demands.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section section-deep">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Testimonials</span>
+            <h2>
+              Trusted by teams that value technical clarity, delivery quality,
+              and dependable ownership
+            </h2>
+          </div>
+          <p>
+            A focused testimonial experience that keeps the proof premium,
+            readable, and aligned with startup and SaaS buyers.
+          </p>
+        </div>
+
+        <div class="testimonials-shell">
+          <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <span class="testimonial-tag">Backend Architecture</span>
+                  <p class="quote">
+                    "Ahmad brought structure to a complex build, improved the
+                    backend architecture, and consistently made practical
+                    technical decisions that helped us move faster with more
+                    confidence."
+                  </p>
+                  <h3>A. Rahman</h3>
+                  <span>CTO, B2B SaaS Platform</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <span class="testimonial-tag">Platform Reliability</span>
+                  <p class="quote">
+                    "We needed someone who could understand both the product
+                    and the systems behind it. Ahmad improved performance,
+                    cleaned up workflows, and gave us a much more stable
+                    platform."
+                  </p>
+                  <h3>S. Malik</h3>
+                  <span>Operations Director, Travel Platform</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <span class="testimonial-tag">Delivery Quality</span>
+                  <p class="quote">
+                    "Reliable, thoughtful, and easy to work with. Ahmad
+                    delivered maintainable code, strong backend solutions, and
+                    clear communication throughout the project."
+                  </p>
+                  <h3>M. Ali</h3>
+                  <span>Product Manager, Marketplace Startup</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <span class="testimonial-tag">Technical Partnership</span>
+                  <p class="quote">
+                    "Ahmad worked like a senior technical partner, not just an
+                    implementer. He clarified trade-offs early, improved
+                    delivery flow, and helped the team ship with much more
+                    confidence."
+                  </p>
+                  <h3>H. Khan</h3>
+                  <span>Founder, SaaS Operations Product</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <span class="testimonial-tag">Product Execution</span>
+                  <p class="quote">
+                    "Ahmad consistently connected technical decisions to
+                    product delivery. The work was thoughtful,
+                    well-structured, and much easier for the team to build on
+                    after launch."
+                  </p>
+                  <h3>N. Shah</h3>
+                  <span>Head of Product, Workflow SaaS</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <span class="testimonial-tag">Scalable Delivery</span>
+                  <p class="quote">
+                    "We brought Ahmad in to stabilize delivery and improve the
+                    backend. He quickly raised the quality bar and helped us
+                    ship with clearer systems and less operational friction."
+                  </p>
+                  <h3>R. Qureshi</h3>
+                  <span>Co-Founder, B2B Platform Team</span>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button
+              class="testimonial-nav testimonial-prev"
+              type="button"
+              aria-label="Previous testimonial"
+            >
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <div class="testimonial-pagination"></div>
+            <button
+              class="testimonial-nav testimonial-next"
+              type="button"
+              aria-label="Next testimonial"
+            >
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section section-accent">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2>Let's Build Something Great Together</h2>
+          </div>
+          <p>
+            If you need a senior engineer to build, improve, or stabilize a
+            product, send the details and I will respond with the best next
+            step.
+          </p>
+        </div>
+
+        <div class="row g-4 contact-layout">
+          <div class="col-lg-5">
+            <div class="contact-panel">
+              <h3>Tell me what you are building</h3>
+              <p>
+                I work best with startups, SaaS teams, and digital businesses
+                that need technical depth, product thinking, and dependable
+                execution.
+              </p>
+
+              <div class="contact-cues">
+                <div>
+                  <i class="bi bi-clock"></i>
+                  <span>Usually responds within 24 hours</span>
+                </div>
+                <div>
+                  <i class="bi bi-person-workspace"></i>
+                  <span>Available for freelance and contract work</span>
+                </div>
+                <div>
+                  <i class="bi bi-calendar3"></i>
+                  <span
+                    >Discovery calls available for qualified projects</span
+                  >
+                </div>
+              </div>
+
+              <div class="contact-links">
+                <a
+                  href="https://calendly.com/ahmadakmal685/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >
+                  Book a Call
+                </a>
+                <a href="mailto:ahmadakmal685@gmail.com" class="text-link">
+                  ahmadakmal685@gmail.com <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="contact-mini-card">
+                <h4>What happens after you submit?</h4>
+                <p>
+                  I review the project scope, follow up with any key
+                  questions, and suggest the best next step, whether that is a
+                  call, a technical review, or a build proposal.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form
+              action="/forms/contact.php"
+              method="post"
+              class="php-email-form contact-form"
+            >
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="project-type" class="form-label"
+                    >Project Type</label
+                  >
+                  <select
+                    class="form-select"
+                    name="project_type"
+                    id="project-type"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Select project type
+                    </option>
+                    <option value="saas-development">
+                      SaaS Platform Development
+                    </option>
+                    <option value="full-stack-product">
+                      Full-Stack Web Development
+                    </option>
+                    <option value="api-backend">
+                      API &amp; Backend Systems
+                    </option>
+                    <option value="optimization">
+                      Performance Optimization
+                    </option>
+                    <option value="devops">
+                      Cloud Deployment &amp; DevOps
+                    </option>
+                    <option value="consulting">Technical Consulting</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="budget-range" class="form-label"
+                    >Budget Range</label
+                  >
+                  <select
+                    class="form-select"
+                    name="budget_range"
+                    id="budget-range"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Select budget range
+                    </option>
+                    <option value="1000-3000">$1k - $3k</option>
+                    <option value="3000-7000">$3k - $7k</option>
+                    <option value="7000-15000">$7k - $15k</option>
+                    <option value="15000-plus">$15k+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="7"
+                    id="message"
+                    placeholder="Share your product, goals, timeline, and the technical help you need."
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. I will get back to you soon.
+                  </div>
+                </div>
+                <div class="col-12 form-submit">
+                  <button type="submit" class="btn btn-primary">
+                    Start the Conversation
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</MainLayout>

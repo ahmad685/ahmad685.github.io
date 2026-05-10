@@ -1,0 +1,785 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout
+  title="Project Details | Ahmad Akmal"
+  description="Premium project detail page template for senior full-stack engineering case studies."
+  bodyClass="project-page"
+  includeSwiper={true}
+  includeValidate={true}
+  page="project-detail"
+  footerVariant="default"
+>
+
+  <main class="main">
+    <section class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center hero-grid project-hero-grid">
+          <div class="col-lg-7">
+            <div class="hero-copy" data-aos="fade-right" data-aos-delay="150">
+              <span class="section-badge">Project Case Study Template</span>
+              <h1 class="case-study-title">
+                Subscription Billing &amp; Account Lifecycle Systems
+              </h1>
+              <p class="hero-lead">
+                Reworked SaaS billing operations to simplify plan management,
+                reduce support overhead, and improve recurring revenue
+                reliability.
+              </p>
+
+              <div class="hero-meta project-meta-row">
+                <div class="meta-pill">
+                  <i class="bi bi-person-workspace"></i>
+                  <span><strong>Role:</strong> Senior Full-Stack Engineer</span>
+                </div>
+                <div class="meta-pill">
+                  <i class="bi bi-calendar3"></i>
+                  <span><strong>Timeline:</strong> 14 weeks</span>
+                </div>
+                <div class="meta-pill">
+                  <i class="bi bi-people"></i>
+                  <span><strong>Team:</strong> 1 PM, 2 FE, 2 BE</span>
+                </div>
+                <div class="meta-pill">
+                  <i class="bi bi-layers"></i>
+                  <span><strong>Stack:</strong> Laravel, Vue, Stripe</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div
+              class="hero-visual"
+              data-aos="fade-left"
+              data-aos-delay="220"
+            >
+              <div class="project-media">
+                <div class="ui-shot billing-shot ui-shot-lg" aria-hidden="true">
+                  <div class="ui-shell">
+                    <div class="ui-sidebar">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="ui-workspace">
+                      <div class="ui-toolbar">
+                        <div class="ui-dots">
+                          <span></span><span></span><span></span>
+                        </div>
+                        <div class="ui-toolbar-pill">Billing Control Center</div>
+                      </div>
+                      <div class="ui-panels">
+                        <div class="ui-stat-card"><span></span><strong></strong></div>
+                        <div class="ui-stat-card"><span></span><strong></strong></div>
+                        <div class="ui-stat-card"><span></span><strong></strong></div>
+                      </div>
+                      <div class="ui-chart"></div>
+                      <div class="ui-table">
+                        <span></span><span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card card-primary">
+                <span class="eyebrow">Revenue Ops</span>
+                <strong>Plan changes now complete without manual support fixes</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid project-impact-metrics">
+          <article class="stat-card">
+            <strong>+32%</strong>
+            <span>Faster plan upgrades after checkout and entitlement updates</span>
+          </article>
+          <article class="stat-card">
+            <strong>-40%</strong>
+            <span>Support tickets tied to proration and renewal confusion</span>
+          </article>
+          <article class="stat-card">
+            <strong>99.9%</strong>
+            <span>Billing event reliability across recurring webhook flows</span>
+          </article>
+          <article class="stat-card">
+            <strong>250k+</strong>
+            <span>Active users handled after pricing model expansion</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading compact-heading">
+          <div>
+            <span class="section-kicker">Featured Product Visual</span>
+            <h3>Billing operations dashboard used by product and support teams</h3>
+          </div>
+          <p>
+            A focused admin surface for subscription status, retries,
+            entitlements, and account actions tied to Stripe events.
+          </p>
+        </div>
+
+        <article class="project-card project-card-featured project-visual-stage">
+          <div class="project-media">
+            <div class="ui-shot billing-shot ui-shot-lg" aria-hidden="true">
+              <div class="ui-shell">
+                <div class="ui-sidebar">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="ui-workspace">
+                  <div class="ui-toolbar">
+                    <div class="ui-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="ui-toolbar-pill">Account Lifecycle Panel</div>
+                  </div>
+                  <div class="ui-panels">
+                    <div class="ui-stat-card"><span></span><strong></strong></div>
+                    <div class="ui-stat-card"><span></span><strong></strong></div>
+                    <div class="ui-stat-card"><span></span><strong></strong></div>
+                  </div>
+                  <div class="ui-chart"></div>
+                  <div class="ui-table">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="product-annotation annotation-top-left"
+              >Plan State Sync</span
+            >
+            <span class="product-annotation annotation-top-right"
+              >Retry Workflow</span
+            >
+            <span class="product-annotation annotation-bottom-left"
+              >Entitlement Rules</span
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-grid case-study-layout">
+          <article class="content-panel">
+            <span class="section-kicker">Context</span>
+            <h2>What this product was and who depended on it daily</h2>
+            <p>
+              The platform served B2B teams managing paid workspaces across
+              multiple plan tiers. Product managers needed fast pricing
+              experiments, while support needed clear billing state visibility
+              to resolve customer requests without engineering handoffs.
+            </p>
+            <p>
+              Revenue and access logic lived across different modules, so plan
+              changes, trial conversions, and cancellations could become
+              operationally expensive.
+            </p>
+          </article>
+
+          <article class="content-panel">
+            <span class="section-kicker">Business Challenge</span>
+            <h2>Why this mattered and what was at risk</h2>
+            <p>
+              Billing inconsistencies were creating avoidable churn moments,
+              ticket escalations, and delayed launches of new pricing options.
+              The team needed fewer failure points without slowing product
+              delivery.
+            </p>
+            <p>
+              A missed renewal or entitlement mismatch impacted revenue,
+              customer trust, and internal confidence during each release.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading compact-heading">
+          <div>
+            <span class="section-kicker">Constraints &amp; Complexity</span>
+            <h3>Engineering realities that shaped delivery choices</h3>
+          </div>
+          <p>
+            These constraints drove the architecture and rollout model.
+          </p>
+        </div>
+
+        <div class="expertise-grid project-complexity-grid">
+          <article class="feature-card">
+            <i class="bi bi-arrow-repeat"></i>
+            <h3>Legacy Billing States</h3>
+            <p>
+              Historical plan data mixed old and new billing semantics, making
+              upgrades and downgrades difficult to reason about.
+            </p>
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-diagram-2"></i>
+            <h3>Multi-Tenant Entitlements</h3>
+            <p>
+              Access rules changed per workspace tier, requiring deterministic
+              enforcement without introducing tenant-level regressions.
+            </p>
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-plug"></i>
+            <h3>Webhook Reliability</h3>
+            <p>
+              Stripe event retries, ordering gaps, and duplicate callbacks had
+              to be handled safely for billing correctness.
+            </p>
+          </article>
+          <article class="feature-card">
+            <i class="bi bi-shield-check"></i>
+            <h3>Migration Risk</h3>
+            <p>
+              Existing subscriptions could not be disrupted while moving to
+              cleaner lifecycle logic and new plan structures.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Architecture &amp; Delivery Approach</span>
+            <h2>System boundaries, rollout phases, and reliability model</h2>
+          </div>
+          <p>
+            The implementation separated billing events, entitlement rules, and
+            admin actions into clear workflows to reduce hidden coupling.
+          </p>
+        </div>
+
+        <div class="case-study-hero architecture-layout">
+          <article class="content-panel">
+            <h3>Implementation approach</h3>
+            <p>
+              We isolated plan-change calculations behind a billing domain
+              service, then routed webhook processing through idempotent jobs
+              with reconciliation logs. This made state transitions observable
+              and easier to debug.
+            </p>
+            <p>
+              Delivery ran in phases: schema hardening, webhook normalization,
+              entitlement refactor, then admin tooling. Each phase shipped with
+              measurable checks before the next release window.
+            </p>
+          </article>
+
+          <article class="content-panel architecture-diagram-panel">
+            <span class="eyebrow">Architecture Diagram</span>
+            <div class="architecture-diagram" aria-label="System architecture">
+              <div class="arch-node">UI / Admin</div>
+              <div class="arch-arrow bi bi-arrow-down"></div>
+              <div class="arch-node">Billing Domain Service</div>
+              <div class="arch-arrow bi bi-arrow-down"></div>
+              <div class="arch-row">
+                <div class="arch-node small">Stripe Events</div>
+                <div class="arch-node small">Entitlement Engine</div>
+              </div>
+              <div class="arch-arrow bi bi-arrow-down"></div>
+              <div class="arch-node">PostgreSQL + Audit Logs</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading compact-heading">
+          <div>
+            <span class="section-kicker">Core Capabilities Delivered</span>
+            <h3>High-value features with clear operational outcomes</h3>
+          </div>
+          <p>
+            Fewer, stronger capabilities intended for real product operations.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <i class="bi bi-sliders"></i>
+            <h3>Subscription Plan Logic</h3>
+            <p>
+              Unified upgrade, downgrade, and proration behavior behind a
+              single decision layer.
+            </p>
+            <span>Simplified plan management and reduced billing ambiguity.</span>
+          </article>
+          <article class="service-card">
+            <i class="bi bi-key"></i>
+            <h3>Entitlement Engine</h3>
+            <p>
+              Enforced workspace-level access by plan and add-on state in
+              near-real time.
+            </p>
+            <span>Prevented feature access drift across tenant accounts.</span>
+          </article>
+          <article class="service-card">
+            <i class="bi bi-layout-text-window-reverse"></i>
+            <h3>Admin Billing Console</h3>
+            <p>
+              Added support-focused controls for retries, overrides, and
+              account timeline visibility.
+            </p>
+            <span>Cut escalation loops between support and engineering.</span>
+          </article>
+          <article class="service-card">
+            <i class="bi bi-receipt"></i>
+            <h3>Billing Workflow Automation</h3>
+            <p>
+              Automated retries, dunning paths, and cancellation handling with
+              event-safe retries.
+            </p>
+            <span>Improved payment recovery and renewal consistency.</span>
+          </article>
+          <article class="service-card">
+            <i class="bi bi-graph-up-arrow"></i>
+            <h3>Revenue and Ops Reporting</h3>
+            <p>
+              Introduced operational reporting for failed payments, conversion
+              funnels, and plan distribution.
+            </p>
+            <span>Enabled better release and pricing decisions per sprint.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-deep">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Key Engineering Decisions</span>
+            <h2>Tradeoffs made to improve reliability without slowing delivery</h2>
+          </div>
+          <p>
+            Decision quality mattered more than volume of features in this
+            phase of the product.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="feature-card">
+            <h3>Idempotent Webhook Processing</h3>
+            <p>
+              <strong>Why chosen:</strong> Stripe retries and event ordering
+              gaps were causing duplicate transitions.
+            </p>
+            <p>
+              <strong>Tradeoff:</strong> Added event ledger complexity and
+              background queue monitoring overhead.
+            </p>
+            <span class="feature-meta"
+              ><strong>Outcome:</strong> Lower billing drift and faster
+              incident resolution.</span
+            >
+          </article>
+          <article class="feature-card">
+            <h3>Domain Service for Plan Changes</h3>
+            <p>
+              <strong>Why chosen:</strong> Plan behavior was scattered across
+              controllers and jobs.
+            </p>
+            <p>
+              <strong>Tradeoff:</strong> Initial refactor took longer before
+              feature velocity increased.
+            </p>
+            <span class="feature-meta"
+              ><strong>Outcome:</strong> Cleaner pricing iteration and fewer
+              regression tickets.</span
+            >
+          </article>
+          <article class="feature-card">
+            <h3>Phased Migration with Guardrails</h3>
+            <p>
+              <strong>Why chosen:</strong> Existing customers could not be
+              exposed to billing outages.
+            </p>
+            <p>
+              <strong>Tradeoff:</strong> Temporary dual-path support during
+              transition windows.
+            </p>
+            <span class="feature-meta"
+              ><strong>Outcome:</strong> Zero critical migration incidents in
+              production rollout.</span
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading compact-heading">
+          <div>
+            <span class="section-kicker">Tech Stack</span>
+            <h3>Minimal stack summary</h3>
+          </div>
+          <p>Compact by design so focus stays on outcomes and decisions.</p>
+        </div>
+
+        <div class="stack-grid project-stack-minimal">
+          <article class="stack-group"><h3>Frontend</h3><p>Vue.js, TypeScript</p></article>
+          <article class="stack-group"><h3>Backend</h3><p>Laravel, Node.js</p></article>
+          <article class="stack-group"><h3>Database</h3><p>PostgreSQL, Redis</p></article>
+          <article class="stack-group"><h3>Infra</h3><p>AWS, Docker, CI/CD</p></article>
+          <article class="stack-group"><h3>Payments</h3><p>Stripe API, Webhooks</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Results &amp; Impact</span>
+            <h2>Proof that the delivery changed product operations</h2>
+          </div>
+          <p>
+            Metrics plus operational outcomes that stakeholders used as
+            evidence of improvement.
+          </p>
+        </div>
+
+        <div class="stats-grid project-impact-metrics">
+          <article class="stat-card">
+            <strong>-58%</strong>
+            <span>Billing mismatch incidents over the first two release cycles</span>
+          </article>
+          <article class="stat-card">
+            <strong>2.3x</strong>
+            <span>Faster admin resolution time for payment recovery cases</span>
+          </article>
+          <article class="stat-card">
+            <strong>+21%</strong>
+            <span>Successful trial-to-paid conversion after plan clarity updates</span>
+          </article>
+          <article class="stat-card">
+            <strong>0</strong>
+            <span>Critical downtime events during phased billing migration</span>
+          </article>
+        </div>
+
+        <article class="content-panel result-points">
+          <ul>
+            <li>Reduced billing errors that previously required manual corrections.</li>
+            <li>Improved admin efficiency through better payment state visibility.</li>
+            <li>Enabled scalable pricing model changes without workflow rewrites.</li>
+            <li>Increased deployment confidence with safer phased rollout checks.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading compact-heading">
+          <div>
+            <span class="section-kicker">Related Projects</span>
+            <h3>Adjacent projects using similar system thinking</h3>
+          </div>
+          <p>Same card style as index for a connected portfolio journey.</p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-3">
+          <article class="project-card project-card-detail">
+            <div class="project-media">
+              <div class="ui-shot api-shot" aria-hidden="true">
+                <div class="ui-shell">
+                  <div class="ui-sidebar">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="ui-workspace">
+                    <div class="ui-toolbar">
+                      <div class="ui-dots">
+                        <span></span><span></span><span></span>
+                      </div>
+                      <div class="ui-toolbar-pill">API Docs</div>
+                    </div>
+                    <div class="ui-panels">
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                    </div>
+                    <div class="ui-chart"></div>
+                    <div class="ui-table">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <h3>API Documentation Portal for Faster Integrations</h3>
+              <p class="project-summary">
+                Reduced developer onboarding friction with structured internal
+                docs and reliable endpoint reference flows.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card-detail">
+            <div class="project-media">
+              <div class="ui-shot infra-shot" aria-hidden="true">
+                <div class="ui-shell">
+                  <div class="ui-sidebar">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="ui-workspace">
+                    <div class="ui-toolbar">
+                      <div class="ui-dots">
+                        <span></span><span></span><span></span>
+                      </div>
+                      <div class="ui-toolbar-pill">Travel Ops</div>
+                    </div>
+                    <div class="ui-panels">
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                    </div>
+                    <div class="ui-chart"></div>
+                    <div class="ui-table">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <h3>Booking Flow and Operations Optimization for Travel Teams</h3>
+              <p class="project-summary">
+                Improved booking reliability and release flow for a live
+                platform under heavy operations load.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card-detail">
+            <div class="project-media">
+              <div class="ui-shot billing-shot" aria-hidden="true">
+                <div class="ui-shell">
+                  <div class="ui-sidebar">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="ui-workspace">
+                    <div class="ui-toolbar">
+                      <div class="ui-dots">
+                        <span></span><span></span><span></span>
+                      </div>
+                      <div class="ui-toolbar-pill">Campaign Ops</div>
+                    </div>
+                    <div class="ui-panels">
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                      <div class="ui-stat-card"><span></span><strong></strong></div>
+                    </div>
+                    <div class="ui-chart"></div>
+                    <div class="ui-table">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <h3>Campaign Analytics and Lead Routing Dashboard</h3>
+              <p class="project-summary">
+                Consolidated campaign reporting and routing decisions into one
+                operator-focused dashboard.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section section-accent">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2>Let's Build Something Great Together</h2>
+          </div>
+          <p>
+            If you need a senior engineer to build, improve, or stabilize a
+            product, send the details and I will respond with the best next
+            step.
+          </p>
+        </div>
+
+        <div class="row g-4 contact-layout">
+          <div class="col-lg-5">
+            <div class="contact-panel">
+              <h3>Tell me what you are building</h3>
+              <p>
+                I work best with startups, SaaS teams, and digital businesses
+                that need technical depth, product thinking, and dependable
+                execution.
+              </p>
+
+              <div class="contact-cues">
+                <div>
+                  <i class="bi bi-clock"></i>
+                  <span>Usually responds within 24 hours</span>
+                </div>
+                <div>
+                  <i class="bi bi-person-workspace"></i>
+                  <span>Available for freelance and contract work</span>
+                </div>
+                <div>
+                  <i class="bi bi-calendar3"></i>
+                  <span
+                    >Discovery calls available for qualified projects</span
+                  >
+                </div>
+              </div>
+
+              <div class="contact-links">
+                <a
+                  href="https://calendly.com/ahmadakmal685/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  Book a Call
+                </a>
+                <a href="mailto:ahmadakmal685@gmail.com" class="text-link">
+                  ahmadakmal685@gmail.com <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="contact-mini-card">
+                <h4>What happens after you submit?</h4>
+                <p>
+                  I review the project scope, follow up with any key
+                  questions, and suggest the best next step, whether that is a
+                  call, a technical review, or a build proposal.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form
+              action="/forms/contact.php"
+              method="post"
+              class="php-email-form contact-form"
+            >
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="project-type" class="form-label"
+                    >Project Type</label
+                  >
+                  <select
+                    class="form-select"
+                    name="project_type"
+                    id="project-type"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Select project type
+                    </option>
+                    <option value="saas-development">
+                      SaaS Platform Development
+                    </option>
+                    <option value="full-stack-product">
+                      Full-Stack Web Development
+                    </option>
+                    <option value="api-backend">
+                      API &amp; Backend Systems
+                    </option>
+                    <option value="optimization">
+                      Performance Optimization
+                    </option>
+                    <option value="devops">
+                      Cloud Deployment &amp; DevOps
+                    </option>
+                    <option value="consulting">Technical Consulting</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="budget-range" class="form-label"
+                    >Budget Range</label
+                  >
+                  <select
+                    class="form-select"
+                    name="budget_range"
+                    id="budget-range"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Select budget range
+                    </option>
+                    <option value="1000-3000">$1k - $3k</option>
+                    <option value="3000-7000">$3k - $7k</option>
+                    <option value="7000-15000">$7k - $15k</option>
+                    <option value="15000-plus">$15k+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="7"
+                    id="message"
+                    placeholder="Share your product, goals, timeline, and the technical help you need."
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. I will get back to you soon.
+                  </div>
+                </div>
+                <div class="col-12 form-submit">
+                  <button type="submit" class="btn btn-primary">
+                    Start the Conversation
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</MainLayout>
